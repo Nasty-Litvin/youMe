@@ -1,8 +1,8 @@
-import "./style.scss"
+import "./style.scss";
 
 const Logo = () => {
     return ( 
-        <img src="/logo" alt="logo" />
+        <img src="/logo.svg" alt="logo" />
      );
 }
  
