@@ -1,19 +1,20 @@
-import { BrowserRouter } from 'react-router-dom';
-import Router from './Router/Router';
-import Footer from './components/Footer/Footer';
+import { BrowserRouter } from "react-router-dom";
+import Router from "./Router/Router";
+import Footer from "./components/Footer/Footer";
 
+import "./App.scss";
 import "./styles/base.scss";
 import "./styles/reset.scss";
-import './App.scss';
 
 function App() {
-
   return (
-      <BrowserRouter>
+    <BrowserRouter>
+      <div className="app-layout">
         <Router />
         <Footer />
-      </BrowserRouter>
-  )
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

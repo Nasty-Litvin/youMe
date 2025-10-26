@@ -7,19 +7,23 @@ import "./style.scss";
 const textButton = "Личный кабинет";
 
 const DefaultHeader = () => {
-    return ( 
-        <div className="default-header">
-            <div className="default-header__logo">
-                <Logo />
-            </div>
-            <div className="default-header__menu">
-                <Menu />
-            </div>
-            <div className="default-header__btn">
-                <Button text={textButton}/>
-            </div>
+  return (
+    <div className="default-header">
+      <div className="container">
+        <div className="default-header__content">
+          <div className="default-header__logo">
+            <Logo />
+          </div>
+          <div className="default-header__menu">
+            <Menu />
+          </div>
+          <div className="default-header__btn">
+            <Button text={textButton} />
+          </div>
         </div>
-     );
-}
- 
+      </div>
+    </div>
+  );
+};
+
 export default DefaultHeader;
