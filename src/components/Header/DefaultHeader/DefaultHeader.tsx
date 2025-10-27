@@ -9,7 +9,6 @@ const textButton = "Личный кабинет";
 const DefaultHeader = () => {
   return (
     <div className="default-header">
-      <div className="container">
         <div className="default-header__content">
           <div className="default-header__logo">
             <Logo />
@@ -21,7 +20,6 @@ const DefaultHeader = () => {
             <Button text={textButton} />
           </div>
         </div>
-      </div>
     </div>
   );
 };

@@ -5,10 +5,10 @@ import "./style.scss";
 
 const DefaultLayout = () => {
     return ( 
-        <div className="default-layout">
+        <div className="container">
             <DefaultHeader />
             <main>
-                <div className="container">
+                <div>
                     <Outlet />
                 </div>
             </main>

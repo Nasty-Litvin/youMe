@@ -1,16 +1,8 @@
-.container {
-    max-width: 1220px;
-    width: 100vw;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-    
-}
+
 .default-header {
   
   &__content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
