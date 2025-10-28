@@ -17,7 +17,7 @@ const DefaultHeader = () => {
             <Menu />
           </div>
           <div className="default-header__btn">
-            <Button text={textButton} />
+            <Button text={textButton}/>
           </div>
         </div>
     </div>

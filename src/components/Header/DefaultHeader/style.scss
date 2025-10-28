@@ -1,8 +1,19 @@
-
 .default-header {
-  
+  padding: 50px 0;
+
   &__content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  &__btn .button {
+    width: 240px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
   }
 }

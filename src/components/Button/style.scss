@@ -1,0 +1,22 @@
+
+.button--default {
+    background: #F9FCFF;
+    border: 2px solid #7872B9;
+    color: #7872B9;
+}
+.button--default:hover {
+    background: #ebe9f8;
+    transition: all 0.3s ease;
+}
+.button--violet {
+    background: #7872B9;
+    color: #F9FCFF;
+}
+.button--violet {
+    background: #9591c0;
+    transition: all 0.3s ease;
+}
+.button--shadow {
+    box-shadow: 10px 10px rgba(205, 225, 255, 1);
+    border-radius: 15px;
+}
