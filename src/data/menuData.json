@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "variant": "header",
+            "data": [
+                {
+                    "label": "О нас",
+                    "url": "/about"
+                },
+                {
+                    "label": "Тарифы",
+                    "url": "/rates"
+                },
+                {
+                    "label": "Психологам",
+                    "url": "/psys"
+                },
+                {
+                    "label": "Материалы",
+                    "url": "",
+                    "submenu": [
+                        {
+                            "label": "Блог",
+                            "url": "/blog"
+                        },
+                        {
+                            "label": "Вебинары",
+                            "url": "/webinars"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "variant": "footer",
+            "data" : [
+                {
+                    "label": "О нас",
+                    "url": "/about"
+                },
+                {
+                    "label": "Тарифы",
+                    "url": "/rates"
+                },
+                {
+                    "label": "Психологам",
+                    "url": "/psys"
+                },
+                {
+                    "label": "Блог",
+                    "url": "/blog"
+                },
+                {
+                    "label": "Вопрос - ответ",
+                    "url": ""
+                },
+                {
+                    "label": "Контакты",
+                    "url": ""
+                }
+            ]
+        }
+    ]
+}

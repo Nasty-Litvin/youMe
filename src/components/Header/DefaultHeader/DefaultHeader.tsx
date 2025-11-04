@@ -1,12 +1,18 @@
 import Button from "../../Button/Button";
 import Logo from "../../Logo/Logo";
 import Menu from "../../Menu/Menu";
-
+import menuData from "../../../data/menuData.json"
+import type { MenuSection } from "../../Menu/Menu";
 import "./style.scss";
 
 const textButton = "Личный кабинет";
 
+
+
+
 const DefaultHeader = () => {
+const arrayMenu: MenuSection[] = menuData.data as MenuSection[];
+
   return (
     <div className="default-header">
         <div className="default-header__content">
@@ -14,7 +20,7 @@ const DefaultHeader = () => {
             <Logo />
           </div>
           <div className="default-header__menu">
-            <Menu />
+            <Menu variant="header" data={arrayMenu} />
           </div>
           <div className="default-header__btn">
             <Button text={textButton}/>

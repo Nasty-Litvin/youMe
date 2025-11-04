@@ -6,6 +6,19 @@
     justify-content: space-between;
     align-items: center;
   }
+  
+  &__menu .menu__wrapper .menu {
+      color: #4D4D52;
+      font-weight: 600;
+      line-height: 30px;
+
+      a.menu__link {
+        color: #4D4D52;
+        &--active {
+          color: #6860c0;
+        }
+      }
+    }
 
   &__btn .button {
     width: 240px;
