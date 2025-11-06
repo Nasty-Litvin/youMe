@@ -13,6 +13,11 @@ const textButton = "Личный кабинет";
 const DefaultHeader = () => {
 const arrayMenu: MenuSection[] = menuData.data as MenuSection[];
 
+
+const menuHeader = arrayMenu.find((item) => item.variant === 'header')?.data ?? []
+console.log('menuHeader====', menuHeader)
+
+
   return (
     <div className="default-header">
         <div className="default-header__content">
@@ -20,7 +25,7 @@ const arrayMenu: MenuSection[] = menuData.data as MenuSection[];
             <Logo />
           </div>
           <div className="default-header__menu">
-            <Menu variant="header" data={arrayMenu} />
+            <Menu variant="header" data={menuHeader} />
           </div>
           <div className="default-header__btn">
             <Button text={textButton}/>
