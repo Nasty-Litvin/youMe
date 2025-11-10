@@ -41,17 +41,29 @@ const Menu = ({variant, data}: MenuProp) => {
                                         <button onClick={() => setOpenIndex(() => index === openIndex ? null : index)}>
                                             {item.label}
                                         </button>
-                                        <ul>
+                                        <ul className="menu__submenu">
                                             {index === openIndex && item.submenu?.map((sub) => (
                                                 <li>
-                                                    <NavLink to={sub.url} className="menu__link">{sub.label}</NavLink>
+                                                    <NavLink 
+                                                        to={sub.url} 
+                                                        className={({isActive}) => 
+                                                            `menu__link ${isActive ? "menu__link--active" : ""}`}
+                                                    >
+                                                        {sub.label}</NavLink>
                                                 </li>
                                             ))}
                                         </ul>
 
                                     </>
                                 ) : (
-                                    <NavLink to={item.url} className="menu__link">{item.label}</NavLink> 
+                                    <NavLink 
+                                        to={item.url} 
+                                        className={({isActive}) => 
+                                            `menu__link ${isActive ? "menu__link--active" : ""}`
+                                        }
+                                    >
+                                        {item.label}
+                                    </NavLink> 
                                 )}
                             </li>
                         )

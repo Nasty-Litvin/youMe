@@ -8,8 +8,6 @@ import "./style.scss";
 const textButton = "Личный кабинет";
 
 
-
-
 const DefaultHeader = () => {
 const arrayMenu: MenuSection[] = menuData.data as MenuSection[];
 
